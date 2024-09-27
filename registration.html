@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .button-p {
+            background-color: rgb(28, 28, 218);
+            border: black 2px solid;
+            width: 100px;
+            height: 30px;
+            color: white;
+        }
+
+        .rg {
+            padding-right: 30px;
+        }
+
+        .cl {
+            padding-right: 15px;
+        }
+    </style>
+</head>
+
+<body style="max-width: 300; margin: 0 auto; background-color:darkseagreen">
+    <div class="form">
+        <h1 style="text-align:center;">Registration Form</h1>
+        <form class="center">
+            <div class="label-pad font">
+                <label for="name" class="label-pad">Full Name<br>
+                    <input type="text" class="len space" name="name">
+                </label>
+            </div>
+            <div class="label-pad font">
+                <label for="email">Email<br>
+                    <input type="email" class="len space" name="email">
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="phno">Password<br>
+                    <input type="text" class="len space" name="phno">
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="phno">Phone number<br>
+                    <input type="text" class="len space" name="phno">
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="date">Date of birth<br>
+                    <input type="date" class="len space" name="date">
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="gen">Gender<br>
+                    <span class="rg"><input type="radio" class="gender" name="gen">Male</span>
+                    <span class="rg"><input type="radio" class="gender" name="gen">Female</span>
+                    <!-- <span class="rg"><input type="radio" class="gender" name="gen">Other</span> -->
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="lang">Languages known<br>
+                    <span class="cl"><input type="checkbox" class="gender" name="lang">Telugu</span>
+                    <span class="cl"><input type="checkbox" class="gender" name="lang">Hindi</span>
+                    <span class="cl"><input type="checkbox" class="gender" name="lang">English</span>
+                    <span class="cl"><input type="checkbox" class="gender" name="lang">Tamil</span>
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="gen">Course interested<br>
+                    <select class="len space">
+                        <option value="#">Select</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>C</option>
+                        <option>C++</option>
+                    </select>
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="address">Address<br>
+                    <textarea name="address" class="len space" rows="2"></textarea>
+                </label>
+                <!-- <br> -->
+            </div>
+            <div class="label-pad font">
+                <label for="filename">Choose your photo&nbsp;&nbsp;<input type="file" id="myFile" name="filename" value="CH"><br>
+                </label>
+            </div>
+            <!-- <br> -->
+            <div class="label-pad font" style="margin-left: 100px;">
+                <button class="button-p" type="submit">Register</button>
+                <button class="button-p" type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
